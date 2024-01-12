@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.671);
+}
+
+nav .logo h1 {
+    text-shadow: 2px 2px 28px rgb(3, 69, 22);
+}
+
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-between;
+}
+
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    border-bottom: 5px solid rgb(6, 124, 4);
+    color: rgb(6, 124, 4);
+}
+
+.freeShippingBar {
+    height: 40px;
+    background-color: rgb(231, 226, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeShippingBar span {
+    color: rgb(16, 82, 17);
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    background-image: url("https://media.istockphoto.com/id/1044405378/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/monstera-%E0%B9%83%E0%B8%9A%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B5%E0%B8%82%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%9A%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89.jpg?s=1024x1024&w=is&k=20&c=-aNEdtmDjj1hCxZnY_fL2_LOiDeBq0dVe-j7sbxYJuE=");
+    background-size:cover;
+}
+
+header div {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 15px;
+    padding: 0px 50px;
+}
+
+header div p {
+    text-align: center;
+    color: rgb(3, 37, 3);
+
+}
+
+header div button {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(6, 69, 6);
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+header div button:hover {
+    background-color: green;
+    box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.324);
+    cursor: pointer;
+}
+
+header h1 {
+    text-shadow: 2px 2px 15px rgba(6, 106, 34, 0.779);
+    color: rgb(3, 37, 3);
+}
+
+section {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid rgba(128, 128, 128, 0.507);
+}
+
+section div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section div button {
+    height: 47px;
+    flex: 1;
+    border: solid white;
+    background-color: white;
+    cursor: pointer;
+}
+
+section div button:active {
+    border-bottom: 3px solid green;
+    font-weight: bold;
+    color: green;
+}
+.product-list{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.card-product {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px  5px gray;
+}
+
+.card-product:hover {
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.484);
+    cursor: pointer;
+}
+
+.product-details {
+    padding: 15px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #EEF7EE;
+    box-shadow: 5px 5px 25px rgba(128, 128, 128, 0.443);
+}
+
+.product div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0px;
+    gap: 10px;
+}
+
+.product img {
+    margin-top: 25px;
+    width: 800px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: rgba(5, 33, 5, 0.427);
+}
+
+footer div {
+    padding: 25px;
+}
+
+footer .getoffer{
+    display: flex;
+}
+
+footer .getoffer div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .getoffer .helper {
+    flex: 1;
+    flex-direction: row;
+}
+
+footer div {
+    text-align: center;
+}
+
+.helpButton {
+    position: sticky;
+    bottom: 25px;
+    left: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.548);
+    border: none;
+    background-color: white;
+}
+
+.helpButton:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 25px gray;
+}
+
+@media only screen and (max-width: 600px) {
+
+    ul {
+        display: none;
+    }
+
+    header div{
+        width: 100%;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+}
